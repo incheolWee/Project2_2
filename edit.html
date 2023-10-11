@@ -31,7 +31,11 @@
                 date.focus();
                 return false;
             } else {
-                alert("데이터를 추가합니다");
+                if (confirm("수정하시겠습니까?")) {
+                    alert("수정하였습니다.");
+                } else {
+                    alert("취소하였습니다");
+                }
             }
 
 
