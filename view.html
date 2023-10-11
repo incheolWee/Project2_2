@@ -13,7 +13,6 @@
 
     <script>
         function validateForm() {
-
             var name = document.form1.name;
             var price = document.form1.price;
             var date = document.form1.date;
@@ -33,10 +32,15 @@
             } else {
                 alert("데이터를 추가합니다");
             }
-
-
-
         }
+        function delete_ok() {
+            if (confirm("삭제하시겠습니까?")) {
+                alert("삭제하였습니다.");
+            } else {
+                alert("취소하였습니다");
+            }
+        }
+
     </script>
 
 </head>
@@ -71,8 +75,10 @@
                 <p>입력 날짜 : 2023-10-10</p><br>
 
             </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="return delete_ok()"
+                style="background-color: rgba(100, 110, 118, 0.706); color:black; border-radius: 10px;  margin-bottom: 60px; margin-left: 400px;">삭제하기</button>
             <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='./index.html'"
-                style="background-color: rgba(100, 110, 118, 0.706); color:black; border-radius: 10px;  margin-bottom: 60px; margin-left: 500px;">뒤로가기</button>
+                style="background-color: rgba(100, 110, 118, 0.706); color:black; border-radius: 10px;  margin-bottom: 60px; margin-left: 50px;">뒤로가기</button>
         </div>
 
     </div>
