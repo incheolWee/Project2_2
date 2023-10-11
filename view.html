@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.101.0">
+    <title>음료수 추가하기</title>
+
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+
+    <script>
+        function validateForm() {
+
+            var name = document.form1.name;
+            var price = document.form1.price;
+            var date = document.form1.date;
+            if (name.value == "") {
+                alert("이름을 입력하세요");
+                name.focus();
+                return false;
+
+            } else if (price.value == "") {
+                alert("가격을 입력하세요");
+                price.focus();
+                return false;
+            } else if (date.value == "") {
+                alert("날짜을 선택하세요");
+                date.focus();
+                return false;
+            } else {
+                alert("데이터를 추가합니다");
+            }
+
+
+
+        }
+    </script>
+
+</head>
+
+<body style="background-color:rgb(143, 216, 240);">
+    <header>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+                <a href="#" class="navbar-brand d-flex align-items-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+                        stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="mr-2"
+                        viewBox="0 0 24 24" focusable="false">
+                        <img src="./image/drink.png" alt="My Image" width="5%"></img>
+                    </svg>
+                    <strong> 음료수 공장</strong>
+            </div>
+        </div>
+    </header>
+
+    <div middle
+        style="background-color:white; margin-left: 30%; text-align: left; color:black; width: 50%; height:500px;  border-radius: 20px;">
+        <div info style="margin-left: 20px; margin-top: 20px; ">
+            <h2 style="text-align: center;">음료수 정보</h2></br>
+            <p2 style="text-align: center;">해당 음료수에 관한 정보입니다</p2>
+
+            <div info>
+                <br>
+                <img src="./image/coke.png" width="100px" height="100px" style="margin-left: 40%"><br>
+                <P>음료수 이름 : 코카콜라</P>
+                <p>가격 : 13000d원</p>
+                <p>음료수 종류: 탄산</p>
+                <p>입력 날짜 : 2023-10-10</p><br>
+
+            </div>
+            <button type="button" class="btn btn-sm btn-outline-secondary" onclick="location.href='./index.html'"
+                style="background-color: rgba(100, 110, 118, 0.706); color:black; border-radius: 10px;  margin-bottom: 60px; margin-left: 500px;">뒤로가기</button>
+        </div>
+
+    </div>
+
+    <footer class="text-muted" style="background-color: rgb(92, 78, 78); width: 100%;
+    height: 10%x; 
+    position: absolute;  
+    bottom: 0;
+    left: 0;  margin-bottom: 0%;">
+        <div class="container" style=" color:white;">
+            <p class="float-right">
+                <a href="#">위로 가기</a>
+            </p>
+            <p>원하시는 음료수를 골라주세요! </p>
+
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+
+</html>
